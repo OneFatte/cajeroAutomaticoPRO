@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/styleUse.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="botones">
+            <h2 id="pagUsuario"></h2>
+            <div>
+                <button onclick="consultar()">Consultar Saldo</button>
+                <button onclick="ingresar()">Ingresar Monto</button>
+                <button onclick="retirar()">Retirar Monto</button>
+            </div>
+            <button onclick="cerrar()" class="cerrar">Cerrar</button>
+        </div>
+
+        <div class="resultados">
+            <div id="mostrarDatos">
+                <p>El saldo en tu cuenta es de: </p>
+                <span id="mostrarSaldo"></span>
+            </div>
+
+            <div id="ingresarDatos">
+                <h3 id="opcion"></h3>
+                <form id="formulario" onsubmit="calcular(event)">
+                    <label>Digite la cantidad: </label>
+                    <input type="text" id="dineroIngresar" />
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <span id="mostrarIngreso"></span>
+                <span id="mostrarTotal"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/script2.js"></script>
+</body>
+
+</html>

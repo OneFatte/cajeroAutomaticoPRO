@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cajero Automatico</h1>
+            <hr class="linea">
+            <h2>Colipatria</h2>
+        </header>
+
+        <main class="root">
+            <div class="usuarios">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <p class="usuario1"></p>
+                <button onclick="openModal(1)">Ingresa</button>
+            </div>
+            <div class="usuarios">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <p class="usuario2"></p>
+                <button onclick="openModal(2)">Ingresa</button>
+            </div>
+            <div class="usuarios">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <p class="usuario3"></p>
+                <button onclick="openModal(3)">Ingresa</button>
+            </div>
+
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <h2 id="usuarioElegido"></h2>
+
+                    <form id="formulario" onsubmit="handleSubmit(event)">
+                        <label>Contraseña: </label>
+                        <input type="text" id="clave" />
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <button class="closeModal" onclick="closeModal('usuarioElegido')">CERRAR</button>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/HoYoverse-Logo bl.png" alt="">
+            <p>Protalento - DEV.F:</p>
+            <p>Camilo Andres Giraldo</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
